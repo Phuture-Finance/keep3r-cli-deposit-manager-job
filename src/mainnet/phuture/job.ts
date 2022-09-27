@@ -29,8 +29,8 @@ const getWorkableTxs: Job['getWorkableTxs'] = async (args) => {
     // Check if job is workable
     const canUpdate = await job.canUpdateDeposits({blockTag: args.advancedBlock});
 
-    const notOrNull = canUpdate ? `` : `not`;
-    logConsole.warn(`Job ${job.address} can ${notOrNull} update deposits`);
+    const notOrNull = canUpdate ? `` : `'t`;
+    logConsole.warn(`Job ${job.address} can${notOrNull} update deposits`);
 
     if (!canUpdate) {
       args.subject.complete();
@@ -43,7 +43,6 @@ const getWorkableTxs: Job['getWorkableTxs'] = async (args) => {
 
     const tx = await job.populateTransaction.updateDeposits({
       nonce: args.keeperNonce,
-      gasLimit: 2_000_000,
       type: 2,
     });
 
