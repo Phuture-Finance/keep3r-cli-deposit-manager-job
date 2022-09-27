@@ -1,6 +1,6 @@
 {
   "name": "@phuture/keep3r-cli-deposit-manager-job",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Phuture CLI Job for The Keep3r Network",
   "keywords": [
     "keep3r",
