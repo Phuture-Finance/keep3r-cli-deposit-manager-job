@@ -1,4 +1,4 @@
-[![image](https://img.shields.io/npm/v/@phuture/keep3r-cli-job-phuture.svg?style=flat-square)](https://www.npmjs.org/package/@phuture/keep3r-cli-job-phuture)
+[![image](https://img.shields.io/npm/v/@phuture/keep3r-cli-deposit-manager-job.svg?style=flat-square)](https://www.npmjs.org/package/@phuture/keep3r-cli-deposit-manager-job)
 
 # Phuture Keep3r CLI Job
 
@@ -7,7 +7,7 @@ This CLI Job enables The Keep3r Network keepers on Ethereum to execute the Phutu
 ## How to install
 
 1. Open a terminal inside your [CLI](https://github.com/keep3r-network/cli) setup
-2. Run `yarn add @phuture/keep3r-cli-job-phuture`
+2. Run `yarn add @phuture/keep3r-cli-deposit-manager-job`
 3. Add job inside your CLI config file. It should look something like this:
 ```
 {
@@ -15,7 +15,7 @@ This CLI Job enables The Keep3r Network keepers on Ethereum to execute the Phutu
     "jobs": [
         ...,
         {
-            "path": "node_modules/@phuture/keep3r-cli-job-phuture/dist/src/mainnet/phuture"
+            "path": "node_modules/@phuture/keep3r-cli-deposit-manager-job/dist/src/mainnet/phuture"
         }
     ]
 }
