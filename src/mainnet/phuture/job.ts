@@ -43,6 +43,7 @@ const getWorkableTxs: Job['getWorkableTxs'] = async (args) => {
 
     const tx = await job.populateTransaction.updateDeposits({
       nonce: args.keeperNonce,
+      gasLimit: 5_000_000,
       type: 2,
     });
 
